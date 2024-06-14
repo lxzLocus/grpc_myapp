@@ -1,8 +1,15 @@
+package main
+
 import (
-	// (一部抜粋)
+	"bufio"
+	"context"
+	"fmt"
+	"log"
+	hellopb "mygrpc/pkg/grpc"
+	"os"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	hellopb "mygrpc/pkg/grpc"
 )
 
 var (
