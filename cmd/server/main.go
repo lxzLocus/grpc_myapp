@@ -2,9 +2,16 @@ package main
 
 import (
 	// (一部抜粋)
+	"context"
+	"fmt"
+	"log"
+	hellopb "mygrpc/pkg/grpc"
+	"net"
+	"os"
+	"os/signal"
+
 	"google.golang.org/grpc"
-  "google.golang.org/grpc/reflection"
-  hellopb "mygrpc/pkg/grpc"
+	"google.golang.org/grpc/reflection"
 )
 
 // 自作サービス構造体のコンストラクタを定義
